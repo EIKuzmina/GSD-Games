@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/black"
+    tools:context="gsd.games.AppActivity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="180dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:fontFamily="@font/title_black_cruinn"
+        android:gravity="center"
+        android:text="@string/welcome_text"
+        android:textColor="@color/gold"
+        android:textSize="55dp" />
+
+</FrameLayout>
