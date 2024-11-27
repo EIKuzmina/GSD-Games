@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:layout_gravity="center"
     android:background="@color/black"
-    tools:context="gsd.games.AppActivity">
+    tools:context=".loading.WelcomeFragment">
 
     <ImageView
         android:id="@+id/icon"
@@ -27,5 +27,16 @@
         android:text="@string/welcome_text"
         android:textColor="@color/gold"
         android:textSize="55dp" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="400dp"
+        android:indeterminate="true"
+        android:progress="0"
+        android:indeterminateDrawable="@drawable/gradient_progressbar"
+         />
 
 </FrameLayout>

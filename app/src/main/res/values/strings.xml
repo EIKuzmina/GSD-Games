@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name" translatable="false">GSD Games</string>
     <string name="welcome_text" translatable="false">GSD GAMES</string>
+    <string name="skip" translatable="false">Пропустить</string>
+    <string name="hello" translatable="false">Добро пожаловать!</string>
+    <string name="scope" translatable="false">Возможности приложения</string>
+    <string name="let_geo" translatable="false">Разрешение на геопозицию</string>
+    <string name="load_one" translatable="false">Откройте для себя мир настольных игр вместе с нами.</string>
+    <string name="load_two"><b>Поиск игр:</b> Легко находите и быстро бронируйте игры.</string>
+    <string name="load_two2"><b>Сообщество:</b> Включайтесь в игровое сообщество и находите новых друзей.</string>
+    <string name="load_three">Для улучшения вашего опыта нам нужно разрешение на доступ к вашей геопозиции.</string>
+    <string name="start" translatable="false">Начать</string>
+    <string name="done" translatable="false">Готово</string>
+    <string name="let">Разрешить</string>
+    <string name="reject">Отклонить</string>
 </resources>

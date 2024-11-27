@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".loading.LoadingTwoFragment">
+
+    <TextView
+        android:id="@+id/title3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cruinn_bold"
+        android:text="@string/let_geo"
+        android:textColor="@color/gold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <ImageView
+        android:id="@+id/load3"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_marginTop="130dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/loading3" />
+
+    <TextView
+        android:id="@+id/desc3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="520dp"
+        android:fontFamily="@font/cruinn_regular"
+        android:text="@string/load_three"
+        android:textColor="@color/gold"
+        android:textSize="18sp"
+        />
+
+
+    <Button
+        android:id="@+id/button3_1"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="@color/gold"
+        android:fontFamily="@font/cruinn_regular"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        android:text="@string/let"
+        />
+    <Button
+        android:id="@+id/button3_2"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/cruinn_regular"
+        android:textColor="@color/gold"
+        app:strokeWidth="1dp"
+        app:strokeColor="@color/gold"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        android:text="@string/reject"
+        />
+
+</FrameLayout>

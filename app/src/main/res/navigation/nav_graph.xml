@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="gsd.games.loading.WelcomeFragment"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_loadingOneFragment"
+            app:destination="@id/loadingOneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingOneFragment"
+        android:name="gsd.games.loading.LoadingOneFragment"
+        android:label="fragment_loading_one"
+        tools:layout="@layout/fragment_loading_one" >
+        <action
+            android:id="@+id/action_loadingOneFragment_to_loadingTwoFragment"
+            app:destination="@id/loadingTwoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingTwoFragment"
+        android:name="gsd.games.loading.LoadingTwoFragment"
+        android:label="fragment_loading_two"
+        tools:layout="@layout/fragment_loading_two" >
+        <action
+            android:id="@+id/action_loadingTwoFragment_to_loadingThreeFragment"
+            app:destination="@id/loadingThreeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingThreeFragment"
+        android:name="gsd.games.loading.LoadingThreeFragment"
+        android:label="LoadingThreeFragment"
+        tools:layout="@layout/fragment_loading_three"
+        />
+
+
+</navigation>

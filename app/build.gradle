@@ -33,6 +33,11 @@ android {
 }
 
 dependencies {
+    implementation libs.androidx.navigation.fragment.ktx
+    implementation libs.androidx.navigation.ui.ktx
+    implementation libs.androidx.runtime.android
+    implementation libs.androidx.foundation.android
+    implementation libs.androidx.material3.android
     def core_version = "1.13.1"
 
     implementation "androidx.core:core-ktx:$core_version"
@@ -40,6 +45,7 @@ dependencies {
     implementation libs.material
     implementation libs.androidx.activity
     implementation libs.androidx.constraintlayout
+
     testImplementation libs.junit
     androidTestImplementation libs.androidx.junit
     androidTestImplementation libs.androidx.espresso.core

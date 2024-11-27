@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".loading.LoadingOneFragment">
+
+    <TextView
+        android:id="@+id/skip1"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cruinn_regular"
+        android:text="@string/skip"
+        android:textColor="@color/gold"
+        android:textSize="15sp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cruinn_bold"
+        android:text="@string/hello"
+        android:textColor="@color/gold"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"/>
+
+    <ImageView
+        android:id="@+id/load1"
+        android:layout_width="wrap_content"
+        android:layout_height="370dp"
+        android:layout_marginTop="110dp"
+        android:gravity="center"
+        app:srcCompat="@drawable/loading1" />
+
+    <TextView
+        android:id="@+id/desc1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="500dp"
+        android:fontFamily="@font/cruinn_regular"
+        android:text="@string/load_one"
+        android:textColor="@color/gold"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="600dp"
+        android:backgroundTint="@color/gold"
+        android:fontFamily="@font/cruinn_regular"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:cornerRadius="20dp"
+        android:text="@string/start"
+        />
+
+</FrameLayout>
