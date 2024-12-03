@@ -20,7 +20,11 @@ class LoadingTwoFragment : Fragment() {
         with(view) {
             findViewById<TextView>(R.id.button2).setOnClickListener {
                 findNavController()
-                    .navigate(R.id.loadingThreeFragment)
+                    .navigate(R.id.menuFragment)
+            }
+            findViewById<TextView>(R.id.skip2).setOnClickListener {
+                findNavController()
+                    .navigate(R.id.menuFragment)
             }
         }
       return view

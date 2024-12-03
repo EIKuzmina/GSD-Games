@@ -29,15 +29,13 @@
         android:label="fragment_loading_two"
         tools:layout="@layout/fragment_loading_two" >
         <action
-            android:id="@+id/action_loadingTwoFragment_to_loadingThreeFragment"
-            app:destination="@id/loadingThreeFragment" />
+            android:id="@+id/action_loadingTwoFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
-        android:id="@+id/loadingThreeFragment"
-        android:name="gsd.games.loading.LoadingThreeFragment"
-        android:label="LoadingThreeFragment"
-        tools:layout="@layout/fragment_loading_three"
-        />
-
+        android:id="@+id/menuFragment"
+        android:name="gsd.games.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
 
 </navigation>

@@ -1,4 +1,4 @@
-package gsd.games.loading
+package gsd.games.menu
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,13 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import gsd.games.R
 
-class LoadingThreeFragment : Fragment() {
+class MenuFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val view = inflater.inflate(R.layout.fragment_loading_three, container, false)
+        val view = inflater.inflate(R.layout.fragment_menu, container, false)
 
         return view
     }

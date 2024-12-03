@@ -2,9 +2,7 @@ package gsd.games.loading
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import gsd.games.R
@@ -22,6 +20,10 @@ class LoadingOneFragment : Fragment() {
             findViewById<TextView>(R.id.button1).setOnClickListener {
                 findNavController()
                     .navigate(R.id.loadingTwoFragment)
+            }
+            findViewById<TextView>(R.id.skip1).setOnClickListener {
+                findNavController()
+                    .navigate(R.id.menuFragment)
             }
         }
         return view

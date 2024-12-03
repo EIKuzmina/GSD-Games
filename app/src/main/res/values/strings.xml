@@ -4,13 +4,24 @@
     <string name="skip" translatable="false">Пропустить</string>
     <string name="hello" translatable="false">Добро пожаловать!</string>
     <string name="scope" translatable="false">Возможности приложения</string>
-    <string name="let_geo" translatable="false">Разрешение на геопозицию</string>
     <string name="load_one" translatable="false">Откройте для себя мир настольных игр вместе с нами.</string>
     <string name="load_two"><b>Поиск игр:</b> Легко находите и быстро бронируйте игры.</string>
     <string name="load_two2"><b>Сообщество:</b> Включайтесь в игровое сообщество и находите новых друзей.</string>
-    <string name="load_three">Для улучшения вашего опыта нам нужно разрешение на доступ к вашей геопозиции.</string>
     <string name="start" translatable="false">Начать</string>
     <string name="done" translatable="false">Готово</string>
-    <string name="let">Разрешить</string>
-    <string name="reject">Отклонить</string>
+    <string name="play" translatable="false">ВО ЧТО ИГРАЕМ СЕГОДНЯ?</string>
+    <string name="game" translatable="false">ВЫБЕРИ СВОЮ ИГРУ</string>
+    <string name="txt_menu_1" translatable="false">Мафия</string>
+    <string name="txt_menu_1_2" translatable="false">Ролевая игра, где участники вычисляют мафиози среди мирных жителей.</string>
+    <string name="txt_menu_2" translatable="false">Манчкин</string>
+    <string name="txt_menu_2_2" translatable="false">Настольная игра, где игроки сражаются \nс монстрами и \nсобирают сокровища.</string>
+    <string name="txt_menu_3" translatable="false">Бункер</string>
+    <string name="txt_menu_3_2" translatable="false">Настольная игра, где игроки решают, кто достоин места \nв убежище.</string>
+    <string name="txt_menu_4" translatable="false">Монополия</string>
+    <string name="txt_menu_4_2" translatable="false">Настольная игра, где игроки покупают,\nпродают недвижимость, стремясь разбогатеть.</string>
+
+
+
+
 </resources>
+
