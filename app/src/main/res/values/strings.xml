@@ -19,9 +19,7 @@
     <string name="txt_menu_3_2" translatable="false">Настольная игра, где игроки решают, кто достоин места \nв убежище.</string>
     <string name="txt_menu_4" translatable="false">Монополия</string>
     <string name="txt_menu_4_2" translatable="false">Настольная игра, где игроки покупают,\nпродают недвижимость, стремясь разбогатеть.</string>
-
-
-
-
+    <string name="lk" translatable="false">ЛИЧНЫЙ КАБИНЕТ</string>
+    <string name="faq" translatable="false">О НАС</string>
 </resources>
 

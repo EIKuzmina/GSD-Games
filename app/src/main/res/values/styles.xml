@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <style name="CustomBottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView">
+        <!-- Убираем фоновый индикатор -->
+        <item name="itemBackground">@android:color/transparent</item>
+        <!-- Настраиваем выделение цветом -->
+        <item name="itemIconTint">@color/nav_menu</item>
+        <item name="itemTextColor">@color/nav_menu</item>
+        <item name="android:textStyle">normal</item>
+        <!-- Отключаем эффект нажатия -->
+        <item name="itemRippleColor">@null</item>
+        <!-- Отключаем белый овал -->
+        <item name="itemShapeAppearanceOverlay">@null</item>
+
+    </style>
+
+    <style name="BottomNavigationTextStyle" parent="TextAppearance.AppCompat.Caption">
+        <!-- Изменение шрифта текста-->
+        <item name="fontFamily">@font/cruinn_regular</item>
+        <!-- Изменение размера текста-->
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
 
 </resources>

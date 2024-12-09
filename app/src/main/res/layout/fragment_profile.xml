@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".faq.FaqFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="660dp"
+        android:background="@color/black">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/prof"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/cruinn_bold"
+            android:gravity="bottom"
+            android:paddingStart="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/lk"
+            android:textColor="@color/gold"
+            android:textSize="22sp" />
+        <ImageView
+            android:id="@+id/lk"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="40dp"
+            app:srcCompat="@drawable/star" />
+        </FrameLayout>
+
+
+
+
+    </ScrollView>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="610dp"
+        app:navGraph="@navigation/nav_graph"
+        app:defaultNavHost="true" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/black"
+        app:itemIconTint="@color/nav_menu"
+        app:itemRippleColor="@null"
+        app:itemBackground="@android:color/transparent"
+        app:itemHorizontalTranslationEnabled="false"
+        style="@style/CustomBottomNavigationView"
+        app:itemTextAppearanceInactive="@style/BottomNavigationTextStyle"
+        app:menu="@menu/bottom_nav_menu"
+        />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
