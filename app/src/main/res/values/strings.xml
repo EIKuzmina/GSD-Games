@@ -21,5 +21,22 @@
     <string name="txt_menu_4_2" translatable="false">Настольная игра, где игроки покупают,\nпродают недвижимость, стремясь разбогатеть.</string>
     <string name="lk" translatable="false">ЛИЧНЫЙ КАБИНЕТ</string>
     <string name="faq" translatable="false">О НАС</string>
+    <string name="txt_faq1" translatable="false"> — это место, где Вы можете</string>
+    <string name="txt_faq1_2" translatable="false">расслабиться и поиграть с профессиональными ведущими.</string>
+    <string name="txt_faq1_3" translatable="false">Наши игры разработаны с уникальным дизайном и заданиями, приближёнными к реальной жизни \nв России. Это поможет вам не только выстроить коммуникацию и партнёрство в реальной жизни, \nно и правильно распоряжаться своими финансами.</string>
+    <string name="questions" translatable="false">ЧАСТЫЕ ВОПРОСЫ</string>
+    <string name="txt_faq01" translatable="false">01</string>
+    <string name="txt_faq02" translatable="false">02</string>
+    <string name="txt_faq03" translatable="false">03</string>
+    <string name="txt_faq04" translatable="false">04</string>
+    <string name="txt_faq01_2" translatable="false">МОЖНО ЛИ ПРИЙТИ НА ИГРУ БЕЗ ЗАПИСИ?</string>
+    <string name="txt_faq02_2" translatable="false">КАК ОТМЕНИТЬ ИГРУ?</string>
+    <string name="txt_faq03_2" translatable="false">ГДЕ ПРОВОДЯТСЯ ИГРЫ?</string>
+    <string name="txt_faq04_2" translatable="false">МОЖНО ЛИ ПРИНОСИТЬ СВОИ НАСТОЛЬНЫЕ ИГРЫ В КЛУБ?</string>
+    <string name="txt_faq01_full" translatable="false">Конечно! Вы можете не записываться заранее на игру, и прийти «по факту», Но места за игровым столом может не быть. Наличие свободных мест определяется ведущим.</string>
+    <string name="txt_faq02_full" translatable="false"> </string>
+    <string name="txt_faq03_full" translatable="false"> </string>
+    <string name="txt_faq04_full" translatable="false"> </string>
+
 </resources>
 
