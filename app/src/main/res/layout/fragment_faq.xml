@@ -1,362 +1,372 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".faq.FaqFragment">
 
-        <FrameLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:background="@color/black">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="90dp"
-            android:background="@color/black">
-            <TextView
-                android:id="@+id/view1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/cruinn_bold"
-                android:gravity="bottom"
-                android:paddingStart="20dp"
-                android:paddingBottom="20dp"
-                android:text="@string/faq"
-                android:textColor="@color/gold"
-                android:textSize="22sp" />
-            <ImageView
-                android:id="@+id/play"
-                android:layout_width="15dp"
-                android:layout_height="15dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="40dp"
-                app:srcCompat="@drawable/star" />
-        </FrameLayout>
+                android:layout_height="90dp"
+                android:background="@color/black">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="80dp"
-        android:background="@color/black">
-        <ImageView
-            android:id="@+id/gsd"
-            android:layout_width="120dp"
-            android:layout_height="35dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="10dp"
-            app:srcCompat="@drawable/gsd_game" />
-        <TextView
-            android:id="@+id/faq1"
-            android:layout_width="230dp"
-            android:layout_height="25dp"
-            android:layout_marginStart="160dp"
-            android:layout_marginTop="20dp"
-            android:fontFamily="@font/cruinn_regular"
-            android:text="@string/txt_faq1"
-            android:textColor="@color/white"
-            android:textSize="15sp" />
-        <TextView
-            android:id="@+id/faq1_2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="45dp"
-            android:fontFamily="@font/cruinn_regular"
-            android:text="@string/txt_faq1_2"
-            android:textColor="@color/white"
-            android:lineSpacingExtra="4dp"
-            android:textSize="15sp" />
-        <TextView
-            android:id="@+id/faq1_3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="100dp"
-            android:fontFamily="@font/cruinn_regular"
-            android:text="@string/txt_faq1_3"
-            android:textColor="@color/white"
-            android:lineSpacingExtra="4dp"
-            android:textSize="15sp" />
-    </FrameLayout>
+                <TextView
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/cruinn_bold"
+                    android:gravity="bottom"
+                    android:paddingStart="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/faq"
+                    android:textColor="@color/gold"
+                    android:textSize="22sp" />
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_marginTop="280dp"
-        android:background="@color/black">
-        <TextView
-            android:id="@+id/questions"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/cruinn_bold"
-            android:gravity="bottom"
-            android:paddingStart="20dp"
-            android:paddingBottom="20dp"
-            android:text="@string/questions"
-            android:textColor="@color/gold"
-            android:textSize="22sp" />
-        <ImageView
-            android:id="@+id/questions_img"
-            android:layout_width="15dp"
-            android:layout_height="15dp"
-            android:layout_marginStart="240dp"
-            android:layout_marginTop="30dp"
-            app:srcCompat="@drawable/star" />
-    </FrameLayout>
+                <ImageView
+                    android:id="@+id/play"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@drawable/star" />
+            </FrameLayout>
 
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="255dp"
-            android:layout_marginTop="355dp"
-            android:background="@color/black">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/black">
+
+                <ImageView
+                    android:id="@+id/gsd"
+                    android:layout_width="120dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="20dp"
+                    app:srcCompat="@drawable/gsd_game" />
+
+                <TextView
+                    android:id="@+id/faq1"
+                    android:layout_width="230dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="160dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/cruinn_regular"
+                    android:text="@string/txt_faq1"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/faq1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="35dp"
+                    android:fontFamily="@font/cruinn_regular"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/txt_faq1_2"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/faq1_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="90dp"
+                    android:fontFamily="@font/cruinn_regular"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/txt_faq1_3"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@color/black">
+
+                <TextView
+                    android:id="@+id/questions"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/cruinn_bold"
+                    android:gravity="bottom"
+                    android:paddingStart="20dp"
+                    android:paddingBottom="20dp"
+                    android:text="@string/questions"
+                    android:textColor="@color/gold"
+                    android:textSize="22sp" />
+
+                <ImageView
+                    android:id="@+id/questions_img"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="30dp"
+                    app:srcCompat="@drawable/star" />
+            </FrameLayout>
+
             <LinearLayout
+                android:id="@+id/faq_item_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/menu"
                 android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/faq_item_1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:background="@drawable/menu"
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/txt_faq01"
-                            android:layout_width="50dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:fontFamily="@font/cruinn_bold"
-                            android:text="@string/txt_faq01"
-                            android:textColor="@color/white"
-                            android:textSize="40sp" />
-
-                        <TextView
-                            android:id="@+id/txt_faq01_2"
-                            android:layout_width="220dp"
-                            android:layout_height="40dp"
-                            android:layout_marginTop="-5dp"
-                            android:fontFamily="@font/cruinn_regular"
-                            android:text="@string/txt_faq01_2"
-                            android:textColor="@color/white"
-                            android:textSize="14sp" />
-
-                        <ImageView
-                            android:id="@+id/img_faq1"
-                            android:layout_width="40dp"
-                            android:layout_height="40dp"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginTop="10dp"
-                            app:srcCompat="@drawable/plus" />
-                    </LinearLayout>
+                    android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/txt_faq01_full"
-                        android:layout_width="220dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="75dp"
-                        android:fontFamily="@font/cruinn_regular"
-                        android:text="@string/txt_faq01_full"
+                        android:id="@+id/txt_faq01"
+                        android:layout_width="50dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/cruinn_bold"
+                        android:text="@string/txt_faq01"
                         android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:visibility="gone"
-                        />
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/txt_faq01_2"
+                        android:layout_width="220dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="-5dp"
+                        android:fontFamily="@font/cruinn_regular"
+                        android:text="@string/txt_faq01_2"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/img_faq1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="10dp"
+                        app:srcCompat="@drawable/plus" />
                 </LinearLayout>
 
+                <TextView
+                    android:id="@+id/txt_faq01_full"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="75dp"
+                    android:fontFamily="@font/cruinn_regular"
+                    android:text="@string/txt_faq01_full"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/faq_item_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/menu"
+                android:orientation="vertical">
+
                 <LinearLayout
-                    android:id="@+id/faq_item_2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/menu"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                    android:orientation="horizontal">
+
                     <TextView
                         android:id="@+id/txt_faq02"
                         android:layout_width="50dp"
                         android:layout_height="40dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="18dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/cruinn_bold"
                         android:text="@string/txt_faq02"
                         android:textColor="@color/white"
                         android:textSize="40sp" />
+
                     <TextView
                         android:id="@+id/txt_faq02_2"
                         android:layout_width="220dp"
-                        android:layout_height="40dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
                         android:fontFamily="@font/cruinn_regular"
                         android:text="@string/txt_faq02_2"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
+
                     <ImageView
                         android:id="@+id/img_faq2"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="28dp"
                         android:layout_marginTop="10dp"
                         app:srcCompat="@drawable/plus" />
                 </LinearLayout>
-                    <TextView
-                        android:id="@+id/txt_faq02_full"
-                        android:layout_width="220dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="75dp"
-                        android:fontFamily="@font/cruinn_regular"
-                        android:text="@string/txt_faq02_full"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:visibility="gone"
-                        />
-                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_faq02_full"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginTop="-10dp"
+                    android:fontFamily="@font/cruinn_regular"
+                    android:text="@string/txt_faq02_full"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/faq_item_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/menu"
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/faq_item_3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/menu"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                    android:orientation="horizontal">
+
                     <TextView
                         android:id="@+id/txt_faq03"
                         android:layout_width="50dp"
                         android:layout_height="40dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="13dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/cruinn_bold"
                         android:text="@string/txt_faq03"
                         android:textColor="@color/white"
                         android:textSize="40sp" />
+
                     <TextView
                         android:id="@+id/txt_faq03_2"
                         android:layout_width="230dp"
-                        android:layout_height="40dp"
+                        android:layout_height="20dp"
                         android:layout_marginStart="10dp"
                         android:fontFamily="@font/cruinn_regular"
                         android:text="@string/txt_faq03_2"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
+
                     <ImageView
                         android:id="@+id/img_faq3"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:layout_marginStart="10dp"
+                        android:layout_marginStart="18dp"
                         android:layout_marginTop="10dp"
                         app:srcCompat="@drawable/plus" />
                 </LinearLayout>
-                    <TextView
-                        android:id="@+id/txt_faq03_full"
-                        android:layout_width="220dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="75dp"
-                        android:fontFamily="@font/cruinn_regular"
-                        android:text="@string/txt_faq03_full"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:visibility="gone"
-                        />
-                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_faq03_full"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginTop="-10dp"
+                    android:fontFamily="@font/cruinn_regular"
+                    android:text="@string/txt_faq03_full"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/faq_item_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/menu"
+                android:orientation="vertical">
 
                 <LinearLayout
-                    android:id="@+id/faq_item_4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/menu"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
+                    android:orientation="horizontal">
+
                     <TextView
                         android:id="@+id/txt_faq04"
                         android:layout_width="50dp"
                         android:layout_height="40dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="13dp"
                         android:layout_marginTop="10dp"
                         android:layout_marginBottom="10dp"
                         android:fontFamily="@font/cruinn_bold"
                         android:text="@string/txt_faq04"
                         android:textColor="@color/white"
                         android:textSize="40sp" />
+
                     <TextView
                         android:id="@+id/txt_faq04_2"
                         android:layout_width="220dp"
                         android:layout_height="40dp"
                         android:layout_marginStart="10dp"
+                        android:layout_marginTop="-5dp"
                         android:fontFamily="@font/cruinn_regular"
                         android:text="@string/txt_faq04_2"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
+
                     <ImageView
                         android:id="@+id/img_faq4"
                         android:layout_width="40dp"
                         android:layout_height="40dp"
-                        android:layout_marginStart="20dp"
+                        android:layout_marginStart="28dp"
                         android:layout_marginTop="10dp"
                         app:srcCompat="@drawable/plus" />
                 </LinearLayout>
-                    <TextView
-                        android:id="@+id/txt_faq04_full"
-                        android:layout_width="220dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="75dp"
-                        android:fontFamily="@font/cruinn_regular"
-                        android:text="@string/txt_faq04_full"
-                        android:textColor="@color/white"
-                        android:textSize="14sp"
-                        android:visibility="gone"
-                        />
-                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_faq04_full"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="75dp"
+                    android:fontFamily="@font/cruinn_regular"
+                    android:text="@string/txt_faq04_full"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
             </LinearLayout>
-        </ScrollView>
+        </LinearLayout>
+    </ScrollView>
 
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/nav_host_fragment"
-            android:name="androidx.navigation.fragment.NavHostFragment"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="610dp"
-            app:navGraph="@navigation/nav_graph"
-            app:defaultNavHost="true" />
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_gravity="bottom"
-            android:background="@color/black"
-            app:itemIconTint="@color/nav_menu"
-            app:itemRippleColor="@null"
-            app:itemBackground="@android:color/transparent"
-            app:itemHorizontalTranslationEnabled="false"
-            style="@style/CustomBottomNavigationView"
-            app:itemTextAppearanceInactive="@style/BottomNavigationTextStyle"
-            app:menu="@menu/bottom_nav_menu"
-            />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/CustomBottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/black"
+        app:itemBackground="@android:color/transparent"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconTint="@color/nav_menu"
+        app:itemRippleColor="@null"
+        app:itemTextAppearanceInactive="@style/BottomNavigationTextStyle"
+        app:menu="@menu/bottom_nav_menu" />
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

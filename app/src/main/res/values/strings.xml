@@ -33,10 +33,9 @@
     <string name="txt_faq02_2" translatable="false">КАК ОТМЕНИТЬ ИГРУ?</string>
     <string name="txt_faq03_2" translatable="false">ГДЕ ПРОВОДЯТСЯ ИГРЫ?</string>
     <string name="txt_faq04_2" translatable="false">МОЖНО ЛИ ПРИНОСИТЬ СВОИ НАСТОЛЬНЫЕ ИГРЫ В КЛУБ?</string>
-    <string name="txt_faq01_full" translatable="false">Конечно! Вы можете не записываться заранее на игру, и прийти «по факту», Но места за игровым столом может не быть. Наличие свободных мест определяется ведущим.</string>
-    <string name="txt_faq02_full" translatable="false"> </string>
-    <string name="txt_faq03_full" translatable="false"> </string>
-    <string name="txt_faq04_full" translatable="false"> </string>
+    <string name="txt_faq01_full" translatable="false">Конечно! Вы можете заранее записаться на игру или прийти “по факту”, но места за игровым столом может не оказаться. Наличие свободных мест определяется ведущим.\n </string>
+    <string name="txt_faq02_full" translatable="false">Игру можно отменить двумя способами: через официальный сайт или воспользовавшись телеграмм-ботом.\n </string>
+    <string name="txt_faq03_full" translatable="false">Игры проходят как в Москве, так и в Нижнем Новгороде. У вас есть возможность выбрать локацию согласно вашим предпочтениям: будь то уютная атмосфера кальянной или же непринужденная обстановка кафе либо бара.\n </string>
+    <string name="txt_faq04_full" translatable="false">У нас работают профессиональные ведущие с актерским образованием, которые проводят игры по заранее подготовленному сценарию. По этой причине использование собственных игр не допускается.\n </string>
 
 </resources>
-
