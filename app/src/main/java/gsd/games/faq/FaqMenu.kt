@@ -1,6 +1,7 @@
 package gsd.games.faq
 
 import android.animation.*
+import android.annotation.SuppressLint
 import android.view.*
 import android.widget.*
 import gsd.games.R
@@ -12,6 +13,11 @@ class FaqMenu(
 ) {
     private var isExpanded = false
 
+    companion object {
+        @SuppressLint("StaticFieldLeak")
+        private var expandedFaq: FaqMenu? = null // Храним открытый вопрос
+    }
+
     init {
         txtFaqFull.visibility = View.GONE
         txtFaqFull.layoutParams.height = 0
@@ -20,17 +26,27 @@ class FaqMenu(
     }
 
     private fun toggle() {
-        isExpanded = !isExpanded
-
         if (isExpanded) {
-            animateExpand(txtFaqFull)
-            imgFaq.setImageResource(R.drawable.close)
-            faqItem.setBackgroundResource(R.drawable.faq_back)
+            collapse()
         } else {
-            animateCollapse(txtFaqFull)
-            imgFaq.setImageResource(R.drawable.plus)
-            faqItem.setBackgroundResource(R.drawable.menu)
+            expandedFaq?.collapse() // Закрываем предыдущий открытый вопрос
+            expand()
+            expandedFaq = this // Сохраняем текущий как открытый
         }
+    }
+
+    fun expand() {
+        isExpanded = true
+        animateExpand(txtFaqFull)
+        imgFaq.setImageResource(R.drawable.close)
+        faqItem.setBackgroundResource(R.drawable.faq_back)
+    }
+
+    fun collapse() {
+        isExpanded = false
+        animateCollapse(txtFaqFull)
+        imgFaq.setImageResource(R.drawable.plus)
+        faqItem.setBackgroundResource(R.drawable.menu)
     }
 
     private fun animateExpand(view: View) {
