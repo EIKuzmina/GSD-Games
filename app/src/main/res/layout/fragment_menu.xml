@@ -55,22 +55,23 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/menuGames"
         android:layout_width="match_parent"
-        android:layout_height="470dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="140dp"
-        android:background="@color/black" />
+        android:background="@color/black"
+        android:paddingBottom="60dp"/>
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_gravity="bottom"
-            android:background="@color/black"
-            app:itemIconTint="@color/nav_menu"
-            app:menu="@menu/bottom_nav_menu"
-            style="@style/CustomBottomNavigationView"
-            app:itemRippleColor="@null"
-            app:itemBackground="@android:color/transparent"
-            app:itemTextAppearanceInactive="@style/BottomNavigationTextStyle"
-            app:itemHorizontalTranslationEnabled="false" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/CustomBottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@color/black"
+        app:itemBackground="@android:color/transparent"
+        app:itemHorizontalTranslationEnabled="false"
+        app:itemIconTint="@color/nav_menu"
+        app:itemRippleColor="@null"
+        app:itemTextAppearanceInactive="@style/BottomNavigationTextStyle"
+        app:menu="@menu/bottom_nav_menu" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -8,9 +8,17 @@
     tools:context=".faq.FaqFragment">
 
     <ScrollView
+        android:id="@+id/scrollView"
         android:layout_width="match_parent"
-        android:layout_height="660dp"
+        android:layout_height="500dp"
+        android:fillViewport="true"
         android:background="@color/black">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -19,7 +27,6 @@
             android:id="@+id/prof"
             android:layout_width="match_parent"
             android:layout_height="70dp"
-            android:layout_marginTop="20dp"
             android:fontFamily="@font/cruinn_bold"
             android:gravity="bottom"
             android:paddingStart="20dp"
@@ -32,23 +39,16 @@
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginStart="240dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="20dp"
             app:srcCompat="@drawable/star" />
         </FrameLayout>
 
 
 
-
+        </LinearLayout>
     </ScrollView>
 
-    <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/nav_host_fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="610dp"
-        app:navGraph="@navigation/nav_graph"
-        app:defaultNavHost="true" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"

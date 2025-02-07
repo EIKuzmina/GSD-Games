@@ -3,7 +3,9 @@ package gsd.games.faq
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.*
+import android.widget.ScrollView
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import gsd.games.R
 import gsd.games.menu.BottomNavHelper
@@ -17,20 +19,20 @@ class FaqFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_faq, container, false)
         val bottomNav = view.findViewById<BottomNavigationView>(R.id.bottom_navigation)
         val navController = findNavController()
+        val scrollView = view.findViewById<ScrollView>(R.id.scrollView) // Оставляем
         BottomNavHelper.setupBottomNavigation(this, bottomNav, navController)
+        val recyclerView = view.findViewById<RecyclerView>(R.id.faqRecyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(requireContext())
 
-        listOf(
-            Triple(R.id.faq_item_1, R.id.img_faq1, R.id.txt_faq01_full),
-            Triple(R.id.faq_item_2, R.id.img_faq2, R.id.txt_faq02_full),
-            Triple(R.id.faq_item_3, R.id.img_faq3, R.id.txt_faq03_full),
-            Triple(R.id.faq_item_4, R.id.img_faq4, R.id.txt_faq04_full)
-        ).forEach { (faqItemId, imgFaqId, txtFaqId) ->
-            FaqMenu(
-                faqItem = view.findViewById(faqItemId),
-                imgFaq = view.findViewById(imgFaqId),
-                txtFaqFull = view.findViewById(txtFaqId)
-            )
-        }
+        val faqItems = listOf(
+            FaqItem(R.string.txt_faq01, R.string.txt_faq01_2, R.string.txt_faq01_full),
+            FaqItem(R.string.txt_faq02, R.string.txt_faq02_2, R.string.txt_faq02_full),
+            FaqItem(R.string.txt_faq03, R.string.txt_faq03_2, R.string.txt_faq03_full),
+            FaqItem(R.string.txt_faq04, R.string.txt_faq04_2, R.string.txt_faq04_full)
+        )
+
+        recyclerView.adapter = FaqAdapter(faqItems, scrollView)
+
         return view
     }
 }
