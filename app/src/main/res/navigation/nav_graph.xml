@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/menuFragment"
-        android:name="gsd.games.menu.MenuFragment"
+        android:name="gsd.games.games.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
         <action

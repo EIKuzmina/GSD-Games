@@ -8,7 +8,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import gsd.games.R
-import gsd.games.menu.BottomNavHelper
+import gsd.games.activity.BottomNavHelper
 
 class FaqFragment : Fragment() {
     override fun onCreateView(
@@ -32,7 +32,6 @@ class FaqFragment : Fragment() {
         )
 
         recyclerView.adapter = FaqAdapter(faqItems, scrollView)
-
         return view
     }
 }

@@ -20,10 +20,8 @@ jobs:
           distribution: 'temurin'
           java-version: 21
 
-      - name: Decode google-services.json
-        env:
-          FIREBASE_SECRET: ${{ secrets.FIREBASE_SECRET }}
-        run: echo $FIREBASE_SECRET > ./app/google-services.json
+      - name: Create local.properties
+        run: echo "BASE_URL=${{ secrets.BASE_URL }}" > local.properties
 
       - name: Build
         run: |

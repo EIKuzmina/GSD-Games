@@ -1,4 +1,4 @@
-package gsd.games.menu
+package gsd.games.activity
 
 import gsd.games.R
 import androidx.fragment.app.Fragment

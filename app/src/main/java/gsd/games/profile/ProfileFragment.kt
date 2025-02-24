@@ -2,13 +2,11 @@ package gsd.games.profile
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.view.*
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import gsd.games.R
-import gsd.games.menu.BottomNavHelper
+import gsd.games.activity.BottomNavHelper
 
 class ProfileFragment : Fragment() {
     override fun onCreateView(
